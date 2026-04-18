@@ -1,56 +1,48 @@
-# 🌌 Zen Programming Language (v1.0)
-**Desenvolvida por LZ GAMES OFC**
+# 💠 Zen Programming Language
 
-A **Zen** é uma linguagem de programação focada em simplicidade, performance e integração nativa com o Windows. Criada do zero por **leoleonardo8362**, ela traduz lógica de alto nível para C++, gerando executáveis (.exe) rápidos e leves.
+![Zen Status](https://img.shields.io/badge/Language-Pre--Alpha-blueviolet?style=for-the-badge)
+![Environment](https://img.shields.io/badge/Environment-MSYS2%20%2F%20UCRT64-006ced?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
----
-
-## 🚀 Diferenciais da Zen
-- **Compilação Global:** Funciona direto no CMD, PowerShell, MSYS2 e VS Code.
-- **Sintaxe Zenith IA:** Comandos nativos para criar interações inteligentes e árvores de decisão (`if`).
-- **Visual Terminal:** Controle total de cores e interface via comandos simples como `cor()` e `limpar()`.
-- **Arquitetura Multi-Estágio:** Processamento dividido em Syntax, Conflict, Linker e Accept.
+**Zen** é uma linguagem de programação (Transpiler) de baixo nível, projetada para ser rápida, minimalista e eficiente. Criada originalmente para orquestrar sistemas de terminais customizados e lógica de motores voxel, o Zen traduz uma sintaxe simplificada diretamente para **C++ Moderno**.
 
 ---
 
-## 🛠️ Comandos Oficiais (v1.0)
+## ⚡ Filosofia Zen
 
-| Comando | Descrição |
-| :--- | :--- |
-| `void main() ( ... )` | Estrutura principal do código. |
-| `texto("mensagem");` | Exibe um texto no console. |
-| `cor(azul/verde);` | Altera a cor do terminal. |
-| `limpar();` | Limpa todo o rastro do console. |
-| `resposta.ia("pergunta");` | Captura entrada do usuário com prefixo de IA. |
-| `if resposta == "valor" ( )` | Lógica de decisão baseada na última resposta. |
-| `esperar();` | Pausa a execução até uma tecla ser pressionada. |
-| `fim void();` | Finaliza o bloco principal com segurança. |
+A linguagem foi construída sobre três pilares:
+1. **Simplicidade Visual**: Menos ruído sintático, mais lógica.
+2. **Performance Nativa**: Compilação direta para código máquina via `g++`.
+3. **Portabilidade**: Gerenciamento de binários estáticos (`-onefile`).
 
 ---
 
-## 📦 Como Instalar (Jeito Raiz)
+## 🛠️ Estrutura da Linguagem
 
-1. Baixe o arquivo **`Zen_Lang_v1.0.zip`** nos [Releases](link-da-aba-releases).
-2. Extraia o conteúdo em uma pasta (ex: `C:\ZenLang`).
-3. Adicione o caminho da pasta `bin` às **Variáveis de Ambiente (PATH)** do seu Windows.
-4. Abra qualquer terminal e digite `zen` para começar a criar!
+O ecossistema Zen é dividido em três partes fundamentais:
+
+* **Zen Core (DLL)**: O motor de análise léxica e tradução.
+* **Zen Compiler (CLI)**: A interface de linha de comando para o desenvolvedor.
+* **Standard Lib**: Conjunto de funções pré-injetadas para manipulação de sistema e terminal.
 
 ---
 
-## 📝 Exemplo de Código (`terra.zen`)
+## 💻 Exemplo de Sintaxe
 
-```zen
+O Zen utiliza um sistema de blocos por parênteses `( )`, unindo a estética de C com a limpeza de scripts modernos.
+
+```python
+// Exemplo de código v1.12
 void main() (
-    cor(azul);
-    limpar();
-    texto("SISTEMA ZENITH IA ATIVO");
-    resposta.ia("Qual o tamanho da Terra?");
+    titulo("Meu Programa Zen")
+    cor(verde)
     
-    if resposta == "Não sei" (
-        cor(verde);
-        print("Estude!!");
-    )
+    texto("Iniciando motor Zen...")
     
-    esperar();
-    fim void();
+    definir player = "Leonardo"
+    texto("Usuario logado: ")
+    texto(player)
+    
+    esperar(1000)
+    limpar()
 )
